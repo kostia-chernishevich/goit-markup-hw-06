@@ -321,7 +321,6 @@ p {
 
 .list-team-social {
   gap: 24px;
-
   text-decoration: none;
   border-radius: 100%;
   display: flex;
@@ -389,7 +388,6 @@ p {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-
   margin-bottom: 8px;
   margin-bottom: 72px;
 }
@@ -405,7 +403,6 @@ p {
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
-
   column-gap: 24px;
   row-gap: 48px;
 }
