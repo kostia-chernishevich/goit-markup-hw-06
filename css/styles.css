@@ -54,7 +54,7 @@ p {
 }
 .header-container {
   display: flex;
-  align-items: space-between;
+  align-items: center;
   justify-content: center;
 }
 .nav-list,
@@ -127,6 +127,7 @@ p {
     letter-spacing: 0.02em;
     color: #2e2f42;
     display: block;
+    padding: 24px 0;
   }
   .aktive-link {
     position: relative;
@@ -148,7 +149,6 @@ p {
 
   .nav-link:hover,
   .nav-link:focus {
-    background-color: #404bbf;
     color: #404bbf;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -258,8 +258,7 @@ p {
   flex-direction: column;
   gap: 40px;
 }
-.nav-item-mobile {
-}
+
 .nav-link-mobile {
   font-weight: 700;
   font-size: 36px;
@@ -273,17 +272,19 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.link-mobile-active {
+  color: #404bbf;
+}
 .address-mobile {
   margin-bottom: 48px;
+  font-style: normal;
 }
 .address-list-mobile {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.address-item-mobile {
-}
+
 .address-link-mobile {
   font-weight: 500;
   font-size: 20px;
@@ -297,8 +298,8 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-container-mobile {
+.address-link-active {
+  color: #4d5ae5;
 }
 .list-mobile-social {
   gap: 40px;
@@ -445,7 +446,7 @@ p {
   margin-right: auto;
   gap: 10px;
   border-radius: 4px;
-  padding: 16px 32px;
+
   width: 169px;
   display: block;
   min-width: 169px;
@@ -495,7 +496,8 @@ p {
 }
 @media screen and (min-width: 768px) {
   .main-list {
-    gap: 24px;
+    row-gap: 72px;
+    column-gap: 24px;
   }
 }
 .main-item {
@@ -702,16 +704,12 @@ p {
     padding: 120px 0;
   }
 }
-.container-portfolio {
-  min-width: 100%;
-}
+
 .text-block {
   border-bottom: 1px solid var(--cornflower);
   border-left: 1px solid var(--cornflower);
   border-right: 1px solid var(--cornflower);
   padding: 32px 16px;
-  min-width: 360px;
-  height: auto;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -890,6 +888,7 @@ footer {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
+  text-align: start;
 }
 
 .list-social {
